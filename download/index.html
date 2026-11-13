@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get StudySpring</title>
+<meta name="description" content="Download StudySpring for Android, iPhone, iPad, Windows and Mac.">
+<meta name="theme-color" content="#3D5FE0">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/pwa-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<style>
+  :root {
+    --ink: #18243A; --muted: #5A6478; --blue: #3D5FE0; --blue-soft: #E3E9FE; --on-blue-soft: #233B9E;
+    --mint-soft: #DDF5EB; --mint-ink: #17785A; --lilac-soft: #EEE8FD; --lilac-ink: #6A4FD0;
+    --butter-soft: #FFF4CC; --butter-ink: #7A5600; --bg: #F6F7FB; --card: #FFFFFF; --line: #E1E5EF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #F3F5FB; --muted: #A9B3C9; --blue: #8EA6FF; --blue-soft: #26315A; --on-blue-soft: #C9D5FF;
+      --mint-soft: #1D3B33; --mint-ink: #8FE3C2; --lilac-soft: #322A55; --lilac-ink: #C4B3FC;
+      --butter-soft: #43391C; --butter-ink: #FFE08A; --bg: #0F1626; --card: #18243A; --line: #2C3B58;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+  header { display: flex; align-items: center; gap: 14px; }
+  header img { width: 56px; height: 56px; border-radius: 16px; }
+  header strong { font-size: 20px; color: var(--blue); letter-spacing: -0.01em; }
+  h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 28px 0 8px; letter-spacing: -0.02em; }
+  .lede { color: var(--muted); margin: 0 0 28px; font-size: 17px; }
+  .grid { display: grid; gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; }
+  .card.recommended { border: 2px solid var(--blue); }
+  .card h2 { font-size: 19px; margin: 6px 0 4px; display: flex; align-items: center; gap: 10px; }
+  .card p { margin: 6px 0; color: var(--muted); }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 99px; }
+  .tag.you { background: var(--blue); color: #fff; }
+  .tag.mint { background: var(--mint-soft); color: var(--mint-ink); }
+  .tag.lilac { background: var(--lilac-soft); color: var(--lilac-ink); }
+  .tag.blue { background: var(--blue-soft); color: var(--on-blue-soft); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 99px;
+         background: var(--blue); color: #fff; font-weight: 600; font-size: 16px; text-decoration: none; border: 0; cursor: pointer; margin-top: 10px; }
+  @media (prefers-color-scheme: dark) { .btn { color: #0F1626; } }
+  .btn.secondary { background: var(--blue-soft); color: var(--on-blue-soft); }
+  .btn[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+  ol { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
+  li { margin: 4px 0; }
+  li b { color: var(--ink); }
+  .note { background: var(--butter-soft); color: var(--butter-ink); border-radius: 14px; padding: 12px 14px; font-size: 14px; margin-top: 12px; }
+  .icon { width: 28px; height: 28px; flex: none; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; text-align: center; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../icons/pwa-192.png" alt="">
+    <strong>StudySpring</strong>
+  </header>
+  <h1>Get StudySpring on your device</h1>
+  <p class="lede">Pick your device below. Your planner is saved privately on that device, with no account needed.</p>
+
+  <div class="grid" id="options">
+    <!-- Android -->
+    <section class="card" id="android" aria-labelledby="android-title">
+      <span class="tag mint">Android phone or tablet</span>
+      <h2 id="android-title">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.6 9.48l1.84-3.18a.5.5 0 0 0-.87-.5l-1.86 3.22A11.4 11.4 0 0 0 12 8a11.4 11.4 0 0 0-4.71 1.02L5.43 5.8a.5.5 0 0 0-.87.5L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+        Android app (.apk)
+      </h2>
+      <p id="apk-ready">Install StudySpring as a regular Android app.</p>
+      <a class="btn" id="apk-btn" href="#" aria-disabled="true">Download for Android</a>
+      <p id="apk-pending" class="hidden">The Android download is being prepared. Until then, StudySpring installs on Android straight from Chrome: open it, tap <b>⋮</b>, then <b>Install app</b>.<br><a class="btn secondary" href="../">Open StudySpring</a></p>
+      <ol>
+        <li>Tap <b>Download for Android</b> and open the downloaded file.</li>
+        <li>If asked, allow your browser or Files app to <b>install unknown apps</b> (only for this install).</li>
+        <li>Tap <b>Install</b>, then <b>Open</b>.</li>
+      </ol>
+    </section>
+
+    <!-- iPhone / iPad -->
+    <section class="card" id="ios" aria-labelledby="ios-title">
+      <span class="tag lilac">iPhone or iPad</span>
+      <h2 id="ios-title">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8s1.9.8 3.2.8c1.3 0 2.1-1.2 2.9-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.4-.9-2.4-3.9zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg>
+        Install from Safari
+      </h2>
+      <p>Apple only allows apps from the App Store, so StudySpring installs from Safari instead. It opens full screen, works offline and looks just like an app.</p>
+      <a class="btn" href="../">Open StudySpring</a>
+      <ol>
+        <li>Open this page in <b>Safari</b>.</li>
+        <li>Tap <b>Open StudySpring</b>, then the <b>Share</b> button (square with an arrow).</li>
+        <li>Choose <b>Add to Home Screen</b>, then <b>Add</b>.</li>
+      </ol>
+    </section>
+
+    <!-- Desktop -->
+    <section class="card" id="desktop" aria-labelledby="desktop-title">
+      <span class="tag blue">Windows, Mac or Chromebook</span>
+      <h2 id="desktop-title">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6v2h3v2H7v-2h3v-2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v9h16V6H4z"/></svg>
+        Desktop app
+      </h2>
+      <p>Installs StudySpring as an app with its own window and taskbar or Dock icon. No download file needed.</p>
+      <button class="btn" id="install-btn" type="button">Install StudySpring</button>
+      <a class="btn secondary" href="../">Open in browser</a>
+      <p id="install-done" class="hidden"><b>Installed!</b> Find StudySpring in your Start menu, Launchpad or app list.</p>
+      <ol id="install-manual">
+        <li><b>Chrome or Edge:</b> open StudySpring and click the <b>install icon</b> at the right of the address bar.</li>
+        <li><b>Safari on Mac:</b> open StudySpring, then <b>File → Add to Dock</b>.</li>
+        <li><b>Firefox:</b> use Chrome or Edge to install, or bookmark StudySpring.</li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="note">Your planner lives on the device you use. Each phone, computer or browser keeps its own copy. To move data, use <b>Profile → Backup &amp; export</b> in the app.</div>
+
+  <footer>StudySpring · For personal use by the purchaser.</footer>
+</main>
+
+<script>
+(function () {
+  // Put the visitor's own device first and mark it.
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/i.test(ua);
+  var mine = isIOS ? 'ios' : isAndroid ? 'android' : 'desktop';
+  var grid = document.getElementById('options');
+  var card = document.getElementById(mine);
+  card.classList.add('recommended');
+  var tag = document.createElement('span');
+  tag.className = 'tag you';
+  tag.textContent = 'Your device';
+  tag.style.marginLeft = '8px';
+  card.querySelector('.tag').after(tag);
+  grid.prepend(card);
+
+  // Android download link comes from links.json so it can change without a rebuild.
+  fetch('links.json', { cache: 'no-store' })
+    .then(function (r) { return r.json(); })
+    .then(function (links) {
+      var btn = document.getElementById('apk-btn');
+      if (links && links.apk) {
+        btn.href = links.apk;
+        btn.removeAttribute('aria-disabled');
+        if (links.apkSizeMb) btn.textContent = 'Download for Android (' + links.apkSizeMb + ' MB)';
+      } else {
+        btn.classList.add('hidden');
+        document.getElementById('apk-ready').classList.add('hidden');
+        document.getElementById('apk-pending').classList.remove('hidden');
+      }
+    })
+    .catch(function () {});
+
+  // One-click desktop/Android install where the browser supports it.
+  var deferred = null;
+  var installBtn = document.getElementById('install-btn');
+  installBtn.classList.add('hidden');
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    deferred = e;
+    installBtn.classList.remove('hidden');
+  });
+  installBtn.addEventListener('click', function () {
+    if (!deferred) return;
+    deferred.prompt();
+    deferred.userChoice.finally(function () { deferred = null; installBtn.classList.add('hidden'); });
+  });
+  window.addEventListener('appinstalled', function () {
+    document.getElementById('install-done').classList.remove('hidden');
+    document.getElementById('install-manual').classList.add('hidden');
+  });
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('../sw.js', { scope: '../' }).catch(function () {});
+})();
+</script>
+</body>
+</html>
