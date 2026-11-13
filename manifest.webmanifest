@@ -1,0 +1,16 @@
+{
+  "name": "StudySpring",
+  "short_name": "StudySpring",
+  "description": "A calm, beautiful student planner: classes, assignments, exams, grades and focused study in one place.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F6F7FB",
+  "theme_color": "#3D5FE0",
+  "icons": [
+    { "src": "icons/pwa-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/pwa-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/pwa-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
